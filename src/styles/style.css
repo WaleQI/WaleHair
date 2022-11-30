@@ -1,0 +1,130 @@
+/* #region IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap');
+/* #endregion IMPORTS */
+
+
+/* #region VARIÁVEIS */
+:root {
+   --main-background-color: #E6E6FA;
+
+   --main-accent-color: #2C0474;
+}
+/* #endregion VARIÁVEIS */
+
+
+/* #region ESTILOS GERAIS */
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+
+   font-size: 16px;
+}
+
+body {
+   font-family: 'Comfortaa', cursive;
+   background-color: var(--main-background-color);
+
+   height: 100vh;
+}
+
+a {
+   text-decoration: none;
+   color: #000;
+}
+/* #endregion ESTILOS GERAIS */
+
+
+/* #region CONTEÚDO */
+
+/* HEADER */
+.nav-header {
+   width: 100%;
+   height: 64px;
+
+   padding: 0 1rem;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+.hr-header-main {
+   /* height: 1px; */
+   color: var(--main-accent-color);
+}
+
+.btn-header {
+   cursor: pointer;
+   background-color: transparent;
+
+   display: grid;
+   place-content: center;
+
+   height: 2rem;
+   border: 1px solid var(--main-accent-color);
+   border-radius: 8px;
+
+   padding: 0 .5rem;
+
+   color: var(--main-accent-color);
+
+   transition: all .3s ease;
+}
+.btn-header:hover {
+   background-color: var(--main-accent-color);
+   color: var(--main-background-color);
+}
+
+.header-links > a {
+   color: var(--main-accent-color);
+   transition: all .3s;
+}
+
+main {
+   height: 100%;
+
+   display: grid;
+   place-items: center;
+
+   padding: 1rem;
+}
+
+#footer {
+   position: absolute;
+   left: 0;
+
+   height: 16px;
+   width: 100%;
+
+   background-color: #2C0474;
+}
+
+/* CORPO */
+
+
+/* UTILIDADES */
+.marg-left-sm { margin-left: .25rem; }
+.marg-right-sm { margin-right: .25rem; }
+
+/* #endregion CONTEÚDO */
+
+
+/* #region MEDIA QUERIES */
+@media screen and (max-width: 530px) {
+   .btn-header {
+      display: none;
+   }
+}
+
+
+
+@media screen and (min-width: 1439px) {
+   .nav-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+   }
+}
+/* #endregion MEDIA QUERIES */
